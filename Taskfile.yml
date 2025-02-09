@@ -1,0 +1,13 @@
+version: '3'
+
+tasks:
+  watch-tailwind:
+    cmds:
+      - npx tailwindcss -i ./input.css -o ./assets/tailwind.css --watch
+
+  serve-web:
+    cmd: dx serve --platform web
+
+  emulate-pixel-9-pro:
+    cmds:
+      - C:\\Users\\adam\\Programs\\Android\\SDK\\emulator\\emulator.exe -avd Pixel_9_Pro_API_35  -netdelay none -netspeed full
